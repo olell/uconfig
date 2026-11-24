@@ -33,7 +33,7 @@ function usage() {
 	exit(1);
 }
 
-while (substr(ARGV[0], '-', 1) == '-') {
+while (substr(ARGV[0], 0, 1) == '-') {
 	let opt = shift(ARGV);
 	opt = split(opt, "");
 	shift(opt);
